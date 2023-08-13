@@ -3,17 +3,65 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* height: 100vh; */
+    height: 100vh;
+    margin: 0;
+    /* padding-top: 50px; */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
 }
 .header{
     font-weight: 100px;
-    font-size: 100px;
+    font-size: 50px;
     margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: none; */
+}
+.main{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.functionalities{
+    /* height:300px;
+    width: 30vw; */
+    /* max-height: 400px;
+    max-width: 400px; */
+    height: 30vw;
+    width: 20vw;
+    min-width: 200px;
+    min-height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 50px; */
+    padding: 20px;
+}
+.color-picker {
+    border-radius: 50%;
+    padding: 0; 
+    border: none;
+    background: none;
+    height: 50px;
+    width: 200px;
+  }
+.color-mode,.rainbow-mode,.darken-mode,.lighten-mode,.eraser,.clear{
+    height: 50px;
+    width: 200px;
+    margin: 5px;
 }
 .container{
-    height: 50vw;
-    width: 50vw;
-    border: 2px solid black;
+    height: 35vw;
+    width: 35vw;
+    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;

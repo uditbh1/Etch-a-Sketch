@@ -7,8 +7,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">Etch-a-Sketch</div>
-    <div class="container"></div>
+    <div class="header" draggable="false">Etch-a-Sketch</div>
+    <div class="main">
+      <div class="functionalities">
+        <input
+          class="color-picker"
+          type="color"
+          id="favcolor"
+          name="favcolor"
+          value="#000000"
+        />
+        <button draggable="false" class="color-mode" value="OFF">
+          Color Mode
+        </button>
+        <button draggable="false" class="rainbow-mode" value="OFF">
+          RainBow Mode
+        </button>
+        <button draggable="false" class="darken-mode" value="OFF">
+          Darken Mode
+        </button>
+        <button draggable="false" class="lighten-mode" value="OFF">
+          Lighten Mode
+        </button>
+        <button draggable="false" class="eraser" value="OFF">Eraser</button>
+        <button draggable="false" class="clear" value="OFF">Clear</button>
+        <input type="range" id="vol" name="vol" min="0" max="50" />
+      </div>
+      <div class="container" draggable="false"></div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
