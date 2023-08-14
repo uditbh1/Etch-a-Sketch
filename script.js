@@ -35,10 +35,13 @@ colorPicker.addEventListener("input", (e) => {
 // Calculate and set the container size
 function calculateContainerSize() {
   const viewportWidth = window.innerWidth;
+  const headerText = document.querySelector(".header-text");
   console.log(viewportWidth);
   if (viewportWidth < 640) {
+    headerText.style.fontSize = "35px";
     return 350;
   } else if (viewportWidth < 1140) {
+    headerText.style.fontSize = "50px";
     return 400;
   } else {
     return 0.35 * viewportWidth;
