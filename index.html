@@ -3,11 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Etch-a-Sketch-By-Fang</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./icon/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header" draggable="false">Etch-a-Sketch</div>
+    <div class="header" draggable="false">
+      <img src="./icon/apple-touch-icon.png" alt="Etch-a-Sketch icon" />
+      Etch-a-Sketch
+    </div>
     <div class="main">
       <div class="functionalities">
         <input
@@ -15,7 +26,7 @@
           type="color"
           id="favcolor"
           name="favcolor"
-          value="#000000"
+          value="#0a0a0a"
         />
         <button draggable="false" class="color-mode" value="OFF">
           Color Mode
@@ -31,10 +42,12 @@
         </button>
         <button draggable="false" class="eraser" value="OFF">Eraser</button>
         <button draggable="false" class="clear" value="OFF">Clear</button>
-        <input type="range" id="vol" name="vol" min="0" max="50" />
+        <input type="range" id="vol" name="vol" min="1" max="64" value="16" />
+        <label for="vol">Grid-Size(16 x 16)</label>
       </div>
       <div class="container" draggable="false"></div>
     </div>
+    <div class="footer" draggable="false">Developed by WhiteFang 👾</div>
     <script src="./script.js"></script>
   </body>
 </html>
